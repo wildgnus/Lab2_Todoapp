@@ -16,7 +16,11 @@ const TodoItem = ({
   };
 
   return (
-    <div className={`todo-item ${todo.completed ? "completed" : ""}`}>
+    <div
+      className={`todo-item ${todo.completed ? "completed" : ""} ${
+        todo.favorite ? "favorite" : ""
+      }`}
+    >
       {isEditing ? (
         <div className="todo-edit">
           <input

@@ -105,3 +105,32 @@ button {
 .app.dark .todo-item {
   background: #2e2e40;
 }
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.app.dark .todo-item {
+  background: #2e2e40;
+}
+
+/* Стили для избранных задач */
+.todo-item.favorite {
+  background-color: #fffae5; /* Светло-жёлтый фон для светлой темы */
+}
+
+.app.dark .todo-item.favorite {
+  background-color: #403c2f; /* Тёмный золотистый фон для тёмной темы */
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
